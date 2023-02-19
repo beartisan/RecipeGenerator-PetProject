@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Generator</title>
+    <!-- css link here -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- javascript link here -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- jquery link -->
+    <!-- <script src="jquery-3.6.1.min.js"></script> -->
+
+</head>
+
+
+<body>
+    <header id="header">
+        <h1>bEat Rice</h1>
+        <h2 id="titleRG">Recipe Generator</h2>
+    </header>
+
+    <main id="main">
+        <div id="ingredients-container" class="form-container">
+        <form action="#" method="post" id="recipeForm" name="form_recipe">   
+            <div id="ingredients-container" class="main-container">  
+            <div class="meatContainer">
+                <legend><h2 id="meat-opt">Select Your Meat</h2> <span id="emptySelectionMeat"> </span> </legend>
+                <!-- <form class="food-selections" id="meatType"> -->
+                    <input type="radio" id="id_chick" name="type_meat" value="chicken">
+                    <label for="id_chick">Chicken</label>
+                    <input type="radio" id="id_beef" name="type_meat" value="beef">
+                    <label for="id_beef">Beef</label>
+                <!-- </form> -->
+            </div>
+            
+            <div class="starchContainer">
+                <legend><h2 id="starch-opt">Select Your Starch</h2> <span id="emptySelectionStarch"> </span></legend>
+                <!-- <form class="food-selections" id="meatType"> -->
+                    <input type="radio" id="id_pasta" name="type_starch" value="pasta">
+                    <label for="id_pasta">Pasta</label>
+                    <input type="radio" id="id_potato" name="type_starch" value="potato">
+                    <label for="id_potato">Potato</label>
+                <!-- </form> -->
+            </div>
+
+            <div class="vegContainer">
+                <legend><h2 id="veg-opt">Select Your Vegetable</h2> <span id="emptySelectionVeg"> </span></legend>
+                <!-- <form class="food-selections" id="vegType"> -->
+                    <input type="radio" id="id_mushroom" name="type_veg" value="mushroom">
+                    <label for="id_mushroom">Mushroom</label>
+                    <input type="radio" id="id_broccoli" name="type_veg" value="broccoli">
+                    <label for="id_broccoli">Broccoli</label>
+                <!-- </form> -->
+            </div>
+        </div>
+            <div class="formBtn-container"> 
+                <input type="reset" value="Clear Choices" id="resetBtn" />
+                <input type="submit" value="Generate Recipe" id="goBtn" />
+            </div>    
+        
+        </form>
+        </div>
+    </main>
+
+
+<section id="listRecipes">
+        <!-- <div class="buttons-container">
+            <div class="item">Item 1</div>
+        </div> -->
+    <!-- <div> You chose <h2 class="innerMeat">meat</h2>,<h2 class="innerStarch">starch</h2>, and <h2 class="innerVeggies">veggies</h2>. </div> -->
+
+<div id="allRecipes">
+<!-- CHICKEN PASTA AND MUSHROOM -->
+    <div class="recipe1" id="chickenAlfredo">
+        <div class="chickPM" >
+            <!-- chicken pasta mushroom white sauce-->
+            <h2 class="currentRecipe">Chicken Alfredo</h2>
+            <img src="images/chickalfredo.jpeg" width="450" />
+            <h3 class="ingredients"> Ingredients: </h3>
+                <p>Chicken Breast (strips), Fettucinne,  Mushrooms, Heavy Cream, Parmesan, Salt and Pepper </p>
+            <div class="full-recipe" id="alfredoRecipe">
+                <h3 > Full Recipe: </h3>
+                    <p>1. Boil noodles on separate pot for 10 minutes for al dente texture. </p>
+                    <p>2. Cook the chicken: Season the chicken, then pan-fry in oil and butter, for 6 minutes a side, or until an internal temperature reaches 165 degrees F. Transfer to a cutting board and let rest for a few minutes, then cut into 1/2-inch thick slices. Tent with foil, while you prepare the sauce. </p>
+                    <p>3. Make the Alfredo sauce: Using the same pan you used to cook the chicken, the cream, butter, and seasonings are incorporated and simmered on medium-low heat until thickened, then the Parmesan is added in until melted and smooth. </p>
+                    <p>4. Assemble: Drain the pasta, reserving some of the liquid to loosen the sauce (only if necessary.) Toss immediately with the Alfredo sauce. Divide the pasta among serving bowls and top with a few slices of cooked chicken. Garnish with parsley, more Parmesan, and black pepper if desired.</p>
+            </div>
+            <input type="submit" value="View Full Recipe" id="chickenAlfredo"   class="goRecipe" /> 
+        </div>
+    </div>
+
+    <div class="recipe2" id="charlieChan">
+        <div class="chickPM" >
+            <!-- chicken pasta mushroom -->
+            <h2 class="currentRecipe">Charlie Chan Pasta</h2>
+            <img src="images/charliechan.webp" width="450" />
+            <h3 class="ingredients"> Ingredients: </h3>
+                <p>Chicken Breast (cubes), Spaghetti,  Mushrooms, Peanuts, Peanut Oil, ChickPea, Garlic and Onion, Char Siu Sauce, Oyster Sauce, Salt and Pepper </p>
+            <div class="full-recipe" id="chanRecipe">
+                <h3 > Full Recipe: </h3>
+                <p>1. Rehydrate shiitake mushrooms in 1 cup of boiling water for 30 minutes. Remove mushrooms from water then thinly slice them then set it aside, reserve the liquid.</p>
+                <p>2. In a bowl combine all sauce ingredients together </p>
+                <p>3. In a wok add peanut oil then sauté onions and garlic.  </p>
+                <p>4. Add the chicken and mushrooms then stir fry until chicken is cooked. </p>
+                <p>5. Add in the cooked pasta in the wok, stir fry for a minute. </p>
+                <p>6. Pour sauce add the peanuts, mix well then continue to stir fry for 3-4 minutes. If it’s to dry add a bit of the mushroom water. </p>
+                <p>7. Garnish with chopped spring onions then serve. </p>
+            </div>
+            <input type="submit" class="goRecipe" value="View Full Recipe" id="charlieChan"  />
+        </div>
+    </div>
+
+<!-- BEEF PASTA AND MUSHROOM-->
+    <div class="recipe1"  id="beefSpaghetti">
+            <div class="beefPM">
+                <!-- beef pasta mushroom redsauce-->
+                <h2 class="currentRecipe">Spaghetti and Meatballs</h2>
+                <img src="images/spagmeatballs.jpeg" width="450" />
+                <h3 class="ingredients"> Ingredients: </h3>
+                    <p>Ground Beef (balls), Spaghetti,  Mushrooms, Tomatoes, Oil,  Garlic and Onion, Parmesan, Salt and Pepper </p>
+                <div class="full-recipe" id="spaghettiRecipe">
+                    <h3 > Full Recipe: </h3>
+                        <p>1. Boil noodles on separate pot.  </p>
+                        <p>2. Turn on the pan. Add your oil and then saute your onion and garlic</p>
+                        <p>3. In a large sauce pot over medium-high heat, warm 2 to 3 teaspoons oil until hot but not smoking. Working in batches if needed, add the meatballs and cook, turning once, until lightly browned but not yet cooked through, 2 to 3 minutes per side. Transfer to a plate. Add more oil between batches if needed. Do not clean the pan.
+                            While the meatballs brown, prepare the mushrooms.  </p>
+                        <p>4. In the same pot used for the meatballs, if dry, add 1 to 2 tablespoons oil. Warm over medium-high heat until hot but not smoking. Add the mushrooms and remaining onion and cook, stirring occasionally, until the vegetables are softened, 2 to 3 minutes. Add the meatballs, herbed marinara, and reserved pasta cooking water and bring to a simmer, scraping up any browned bits from the bottom of the pot. Cook, stirring occasionally, until the meatballs are cooked through, 4 to 6 minutes. Stir in the spaghetti, toss to coat, and cook until warmed through, 1 to 2 minutes. Remove from the heat and season to taste with salt and pepper. When the meatballs and sauce are almost done, prepare the salad. </p>
+                        
+                </div>
+                <input type="submit" class="goRecipe" value="View Full Recipe"  id="beefSpaghetti"  />
+            </div>
+    </div>
+    <div class="recipe2" id="beefStroganoff">
+            <div class="beefPM" >
+                <!-- beef pasta mushroom white sauce-->
+                <h2 class="currentRecipe">Beef Stroganoff</h2>
+                <img src="images/beefstroganoff.webp" width="450" />
+                <h3 class="ingredients"> Ingredients: </h3>
+                    <p>Boneless Ribeye or Beef Sirloin, Any Pasta or Egg Noodles of choice,  Mushroom, Heavy Cream, Oil,  Garlic and Onion, Parmesan, Salt and Pepper </p>
+                <div class="full-recipe" id="stroganoffRecipe">
+                    <h3 > Full Recipe: </h3>
+                        <p>1. Boil noodles on separate pot.  </p>
+                        <p>2. Use your fist (or rolling pin or mallet) to flatten the steaks to about 3/4cm / 1/3" thick. Slice into 5mm / 1/5" strips (cut long ones in half), discarding excess fat. Season with salt and pepper. </p>
+                        <p>3.Heat 1 tbsp oil in a large skillet over high heat. Scatter half the beef in the skillet, QUICKLY spread it with tongs. Leave untouched for 30 seconds until browned. Turn beef quickly (as best you can!). Leave untouched for 30 seconds to brown. Immediately remove onto a plate. Don't worry about pink bits and that it will be raw inside.  </p>
+                        <p>4. Add remaining 1 tbsp oil and repeat with remaining beef. </p>
+                        <p>5. Turn heat down to medium high. Add butter, melt. Then add onions, cook for 1 minute, then add mushrooms. Cook mushrooms until golden. Scrape bottom of fry pan to get all the golden bits off (this is flavour!). </p>
+                        <p>6. Add flour, cook, stirring, for 1 minute. Add half the broth while stirring. Once incorporated, add remaining broth. </p>
+                        <p>7. Stir, then add sour cream and mustard. Stir until incorporated (don't worry if it looks split, sour cream will "melt" as it heats). </p>
+                        <p>8. Bring to simmer ,then reduce heat to medium low. Once it thickens to the consistency of pouring cream (3 - 5 minutes), adjust salt and pepper to taste. </p>
+                </div>
+                <input type="submit" class="goRecipe" value="View Full Recipe" id="beefStroganoff" / > 
+            </div>
+    </div>
+
+<!-- CHICKEN PASTA AND BROCCOLI -->
+    <div class="recipe1" id="chickenBroc">
+            <div class="chickPB" >
+                <!-- chicken pasta brocoli white sauce-->
+                <h2 class="currentRecipe">Chicken Brocolli Pasta</h2>
+                <img src="images/chickbrockpast.jpeg" width="450" />
+                <h3 class="ingredients"> Ingredients: </h3>
+                <p>Chicken, Brocolli, Pasta, heavy cream </p>
+            <div class="full-recipe" id="chicbrocRecipe">
+                <h3 > Full Recipe: </h3>
+                <p>1. Season the chicken with lemon pepper seasoning and sear it in olive oil until golden. Set aside. </p>
+                <p>2. Deglaze the pot with white wine and let it reduce by half. Add the butter and the garlic and cook for 1 minute. Add the flour and cook for 1-2 minutes. </p>        
+                <p>3. Add the chicken broth and half and half in splashes, stirring continuously. Add the hot sauce and seasonings. Bring to a boil, then reduce to a simmer while you boil the pasta to al dente. Add the broccoli to the boiling pasta water during the last 4 minutes. Drain. </p>
+                <p>4. Reduce heat to low and stir the Asiago and Parmesan cheese into the sauce. Remove from heat and stir in the lemon juice, Add the pasta, broccoli, and chicken and stir to combine.</p>
+            </div>
+                <input type="submit" class="goRecipe" value="View Full Recipe"  id="chickenBroc" / >
+            </div>
+    </div>
+
+    <div class="recipe2" id="macCheese">
+            <div class="chickPB" >
+                <!-- chicken pasta broccoli macandcheese-->
+                <h2 class="currentRecipe">Chicken Brocolli Mac & Cheese</h2>
+                <img src="images/maccheese.webp" width="450" />
+                <h3 class="ingredients"> Ingredients: </h3>
+                <p>Chicken, Brocolli, Macaroni, Cheese </p>
+            <div class="full-recipe" id="maccheeseRecipe">
+                <h3 > Full Recipe: </h3>
+                    <p>1. Preheat oven to 350°F. </p>
+                    <p>2. Cook pasta al dente** in a large stockpot of generously-salted water, according to package instructions.  About 2-3 minutes before the pasta reaches al dente, add in the broccoli florets and let them cook alongside the pasta for the remainder of the cooking time.  Drain and set aside.</p>
+                    <p>3. Meanwhile, as the pasta water is heating, melt butter in a (separate) medium saute pan over medium-high heat.  Add garlic and saute for 1 minute or until fragrant, stirring occasionally.  Whisk in the flour until combined and cook for an additional 1 minute, whisking occasionally.  Slowly whisk in vegetable or chicken stock until the mixture is smooth.  Then slowly whisk in the milk until it is combined.  Continue cooking for 1-2 minutes, or until the mixture comes to a simmer.  Then remove from heat, and stir in the cheddar, Parmesan, salt and pepper until the cheese sauce is smooth.  Remove from heat.
+                    </p>
+                    <p>4. Once the pasta and broccoli are cooked, pour the cheese sauce on top of the pasta, add in the chicken, and toss until everything is evenly combined.</p>
+                    <p>5. At this point, you can either serve the pasta stovetop-style as-is.  Or pour the pasta into a greased 9 x 13-inch baking dish, and sprinkle with extra cheddar cheese and Panko breadcrumbs.  Bake for 15-20 minutes, or until the top becomes slightly crispy and the breadcrumbs are slightly golden.  Remove and serve immediately.</p>
+            </div>
+                <input type="submit" class="goRecipe" value="View Full Recipe"  id="macCheese" />
+            </div>
+    </div>
+
+<!-- BEEF PASTA AND BROCCOLI -->
+    <div class="recipe1" id="beefLomien">
+            <div class="beefPB" >
+                <!-- beef noodles brocoli asian stirfry-->
+                <h2 class="currentRecipe">Beef Stir Fry Noodles</h2>
+                <img src="images/beeflomien.jpeg" width="450" />
+                <h3 class="ingredients"> Ingredients: </h3>
+                <p>Beef, Egg Noodles, Brocolli, Bell Pepper, Carrots, Soy Sauce, Brown Sgugar </p>
+                <div class="full-recipe" id="beefLomienRecipe">
+                <h3 > Full Recipe: </h3>
+                    <p>1. Into hot, boiled water add Better Than Bullion and brown sugar; stir to dissolve. Into the mixture, add soy sauce and set aside.  </p>
+                    <p>2. Dice carrots, broccoli and onion into two-inch pieces. Pre slice beef into very thin strips. Using a hot skillet with sesame oil, cook beef until it's golden brown, remove from the skillet and set aside.</p>
+                    <p>3. Using the same skillet that was used to cook beef, sautee onions until golden brown with sesame oil. Remove from the skillet. In the same skillet, saute carrots until softened, add broccoli and cook for about three minutes. Press garlic into the same mixture. </p> 
+                    <p>4. Add cooked beef into the skillet with vegetables. Pour sauce over the ingredietns and let them simmer for about 2 minutes.</p>
+                    <p>5. Add cooked noodles and toss everything together. </p>
+                    <p>6. Into a large dish, combine noodles, vegetables and beef. Toss to bring everything together and serve while it's still hot. </p>
+                </div>
+                <input type="submit" class="goRecipe" value="View Full Recipe"  id="beefLomien" />
+            </div>
+    </div>
+    <div class="recipe2" id="beefSoup">
+            <div class="beefPB" >
+                <!-- beef pasta broccoli beef-->
+                <h2 class="currentRecipe">Beef Broccoli Soup</h2>
+                <img src="images/beefsoup.jpg" width="450" />
+                <h3 class="ingredients"> Ingredients: </h3>
+                <p>Beef, Udon, Brocolli, Soy Sauce, Brown Sgugar </p>
+                <div class="full-recipe" id="beefsoupRecipe">
+                <h3 > Full Recipe: </h3>
+                <p>1. In a pan add oil, and once hot, add onions, garlic and ginger. Stir fry till fragrant.  </p>
+                <p>2. Add the beef slices next, and allow to cook. </p>
+                <p>3. Add the dark soy sauce, oyster sauce, tomato paste and black pepper and combine with the beef. Add water to form a liquid sauce. You can combine these ingredients in a bowl beforehand for efficiency. </p> 
+                <p>4. Add the udon to the sauce. Gently separate the noodles in the sauce until it’s not a block. Allow the sauce to come to a boil.</p>
+                <p>5.  Once it boils, add broccoli. Add the cornstarch and water slurry bit by bit, until sauce thickens.Serve!</p>
+                </div>
+                <input type="submit" class="goRecipe" value="View Full Recipe" id="beefSoup" />
+            </div>
+    </div>
+
+<!-- CHICKEN POTATO AND MUSHROOM -->
+    <div class="recipe1" id="chickPiccata">
+        <div class="chickPotM" >
+            <!-- chicken potato mushroom -->
+            <h2 class="currentRecipe">Chicken Piccata</h2>
+            <img src="images/chickenpiccata.jpeg" width="450" />
+            <h3 class="ingredients"> Ingredients: </h3>
+            <p> Chicken Breast, Potato, Mushroom, Carrots, unsalted butter, 1/3 cup lemon juice, 1/2 cup chicken stock, 1/3 cup chopped parsley </p>
+            <div class="full-recipe" id="chickpiccataRecipe">
+            <h3 > Full Recipe: </h3>
+            <p>1.  Season chicken with salt and pepper. Dredge chicken in flour and shake off excess. </p>
+            <p>2. In a large skillet over medium high heat, melt 2 tablespoons of butter with 3 tablespoons olive oil. When butter and oil start to sizzle, add 2 pieces of chicken and cook for 3 minutes. When chicken is browned, flip and cook other side for 3 minutes. Remove and transfer to plate. Melt 2 more tablespoons butter and add another 2 tablespoons olive oil. When butter and oil start to sizzle, add the other 2 pieces of chicken and brown both sides in same manner. Remove pan from heat and add chicken to the plate. </p>
+            <p>3. Into the pan add the lemon juice, stock and capers. Return to stove and bring to boil, scraping up brown bits from the pan for extra flavor. Check for seasoning. Return all the chicken to the pan and simmer for 5 minutes. Remove chicken to platter. Add remaining 2 tablespoons butter to sauce and whisk vigorously. Pour sauce over chicken and garnish with parsley. </p> 
+
+            </div>
+            <input type="submit" class="goRecipe" value="View Full Recipe"  id="chickPiccata"/>
+        </div>
+    </div>
+
+    <div class="recipe2" id="garlicChick">
+        <div class="chickPotM" >
+            <!-- chicken potato mushroom -->
+            <h2 class="currentRecipe">Creamy Garlic Chicken</h2>
+            <img src="images/garlicchicken.jpeg" width="450" />
+            <h3 class="ingredients"> Ingredients: </h3>
+            <p>Chicken Breast, Potato, Mushroom, Heavy Cream, Garlic, All Purpose Flour, Oil, Chicken Stock </p>
+            <div class="full-recipe" id="garlicChickRecipe">
+            <h3 > Full Recipe: </h3>
+            <p>1.  Simply slice the chicken breast in half lengthwise, season each piece and dredge in flour.  </p>
+            <p>2. Heat up oil in a skillet. Cook chicken on both sides until nicely browned. Remove onto a plate. </p>
+            <p>3. Make the creamy mushroom sauce in the same pan by adding more oil, garlic and mushrooms and saute until soft and fragrant. , add the chicken back in. </p> 
+            <p>4. Garnish with chopped parsley and serve. Since the chicken breast pieces are thin, they don't take much time to cook. </p>
+            <p>5.  On the side, mash the potatoes, mix it with cream, butter, and salt. </p>
+            </div>
+            <input type="submit" class="goRecipe" value="View Full Recipe"  id="garlicChick"/>
+        </div>
+    </div>
+
+<!-- BEEF POTATO AND MUSHROOM -->
+    <div class="recipe1" id="salisbury">
+        <div class="beefPotM" >
+            <!-- beef mash potato mushroom western salisbury-->
+            <h2 class="currentRecipe">Salisbury Steak</h2>
+            <img src="images/salisburysteak.jpeg" width="450" />
+            <h3 class="ingredients"> Ingredients: </h3>
+            <p>Lean Ground Beef, Mushrooms, Potato, Bread Crumbs, Cornstarch, Onions, 2 cups Beef Broth </p>
+            <div class="full-recipe" id="salisburyRecipe">
+            <h3 > Full Recipe: </h3>
+                <p>1. Combine ground beef, bread crumbs, chopped onion, egg, salt, and black pepper in a large bowl until evenly mixed. Shape beef mixture into 4 patties, about 3/4-inch thick. </p>
+                <p>2.Fry patties in a large skillet over medium heat until browned on both sides, about 10 minutes. Add beef broth, onion, and mushrooms; bring to a boil. Reduce heat to low, cover, and simmer until patties are no longer pink in the center, about 10 minutes more. Transfer patties to a platter and keep warm. </p>
+                <p>3. Bring onion mixture to a boil. Mix cornstarch and water in a small bowl; stir into onion mixture. Cook and stir until onion gravy is thickened, about 1 minute. Pour over patties to serve. </p>
+            </div>
+            <input type="submit" class="goRecipe" value="View Full Recipe" id="salisbury" />
+        </div>
+        </div>
+        <div class="recipe2" id="caldereta">
+            <div class="beefPotM" >
+                <!-- beef boiledpotato mushroom filipino-->
+                <h2 class="currentRecipe">Beef Caldereta</h2>
+                <img src="images/beefcaldereta.jpeg" width="450" />
+                <h3 class="ingredients"> Ingredients: </h3>
+            <p>Beef, Potatoes, Carrots, Bell Pepper, Mushrooms, Tomato Sauce, Cheese, Butter, 2 cups beef broth, oregano, cream of mushroom </p>
+            <div class="full-recipe" id="calderetaRecipe">
+            <h3 > Full Recipe: </h3>
+                <p>1. Rub salt and ground black pepper on the beef. Let it stay for 10 minutes. </p>
+                <p>2. Melt 1 tablespoon butter in a Dutch oven or cooking pot. Put the beef in and cook for 3 to 5 minutes or until the color turns light brown. </p>
+                <p>3. Remove the beef. Set Aside. Melt the remaining butter in the same cooking pot. </p>
+                <p>4. Once the butter melts, saute the mushrooms, onions, and garlic. Continue to cook until the mushrooms become soft. Add the beef. Cook for 2 minutes.</p>
+                <p>5. Add the tomato paste, parsley, oregano, and beef broth. Stir and let boil. Cover and simmer 60 min.</p>
+                <p>6. Add the cream of mushroom. Stir and cook for 2 to 3 minutes. Turn the heat off. Transfer to a serving plate.</p>
+            </div>
+                <input type="submit" class="goRecipe" value="View Full Recipe" id="caldereta"/>
+            </div>
+        </div>
+   
+
+    <!-- CHICKEN POTATO AND BROCCOLI   -->
+    <div class="recipe1" id="chickStirFry">
+        <div class="chickPotB">
+        <!-- chicken potato broccoli -->
+            <h2 class="currentRecipe">Chicken Stir Fry</h2>
+            <img src="images/chickstirfry.jpeg" width="450" />
+            <h3 class="ingredients"> Ingredients: </h3>
+            <p>Chicken, Potato, Brocolli, Bell Pepper, Carrots, Soy Sauce, Brown Sugar, Ginger </p>
+            <div class="full-recipe" id="chickstirfryRecipe">
+            <h3 > Full Recipe: </h3>
+                <p>1. Heat 1 teaspoon of oil in a large frying pan over medium heat. Add the broccoli and mushrooms and cook for approximately 4 minutes or until vegetables are tender. </p>
+                <p>2. Add the ginger and garlic to the pan and cook for 30 seconds more. </p>
+                <p>3. Remove the vegetables from the pan; place them on a plate and cover. Wipe the pan clean with a paper towel and turn the heat to high. Add the remaining tablespoon of oil. </p>
+                <p>4. Season the chicken pieces with salt and pepper and add them to the pan in a single layer - you may need to do this step in batches. Cook for 3-4 minutes on each side until golden brown and cooked through. </p>
+                <p>5. Add the vegetables back to the pan and cook for 2 more minutes or until the vegetables are warmed through.</p>
+                <p>6. In a bowl whisk together the oyster sauce, chicken broth, sugar, sesame oil and soy sauce. In a small bowl mix the cornstarch with a tablespoon of cold water.</p>
+                <p>7. Pour the oyster sauce mixture over the chicken and vegetables; cook for 30 seconds. Add the cornstarch and bring to a boil; cook for 1 more minute or until sauce has just started to thicken.</p>
+            </div>
+            <input type="submit" class="goRecipe" value="View Full Recipe" id="chickStirFry" />
+        </div>
+    </div>
+
+    <div class="recipe2" id="chickRoasted">
+        <div class="chickPotB" >
+        <!-- chicken potato broccoli -->
+            <h2 class="currentRecipe">Roasted Chicken</h2>
+            <img src="images/roastchicken.webp" width="450" />
+            <h3 class="ingredients"> Ingredients: </h3>
+            <p>Chicken, Potato, Brocolli, Bell Pepper, Carrots, Soy Sauce, Brown Sugar </p>
+            <div class="full-recipe" id="chickroastedRecipe">
+            <h3 > Full Recipe: </h3>
+            <p>1.  Heat 2 Tablespoons of oil in the same skillet over medium high heat. Once the oil is shimmering, add the steak.  </p>
+            <p>2.Allow the pieces to sear for just about a minute or two per side, then turn to brown on all sides. Be careful of overcooking! </p>
+            <p>3. Test for doneness with a meat thermometer (145°F + 3 minute rest, per USDA), or by simply taking a piece out of the skillet and cutting into it (and then sneaking a bite, yum!). Set the steak pieces to the plate with the vegetables. </p> 
+            <p>4. Last, make the garlic butter sauce: First, lower the heat, then add the remaining oil, butter, and garlic to the skillet. Saute over low heat until the garlic is fragrant, about 3-4 minutes.</p>
+            <p>5. Add the steak and vegetables to the skillet, turning to fully coat the steak and vegetables in the butter and garlic. Sprinkle with parsley and season lightly with salt and pepper. Serve immediately!</p>
+            </div>
+            <input type="submit" class="goRecipe" value="View Full Recipe" id="chickRoasted"/>
+        </div>
+    </div>
+
+
+
+    <!-- BEEF POTATO AND BROCCOLI -->
+    <div class="recipe1"  id="steakBites">
+        <div class="beefPotB">
+        <!-- beef boiled potato broccoli western -->
+            <h2 class="currentRecipe">Garlic Butter Steak Bites</h2>
+            <img src="images/steakbites.jpeg" width="450" />
+            <h3 class="ingredients"> Ingredients: </h3>
+            <p>Sirloin Steak (Cubes), Potatoes Brocolli, Butter, Garlic </p>
+            <div class="full-recipe" id="steakbitesRecipe">
+            <h3 > Full Recipe: </h3>
+            <p>1.  Heat 2 Tablespoons of oil in the same skillet over medium high heat. Once the oil is shimmering, add the steak.  </p>
+            <p>2.Allow the pieces to sear for just about a minute or two per side, then turn to brown on all sides. Be careful of overcooking! </p>
+            <p>3. Test for doneness with a meat thermometer (145°F + 3 minute rest, per USDA), or by simply taking a piece out of the skillet and cutting into it (and then sneaking a bite, yum!). Set the steak pieces to the plate with the vegetables. </p> 
+            <p>4. Last, make the garlic butter sauce: First, lower the heat, then add the remaining oil, butter, and garlic to the skillet. Saute over low heat until the garlic is fragrant, about 3-4 minutes.</p>
+            <p>5. Add the steak and vegetables to the skillet, turning to fully coat the steak and vegetables in the butter and garlic. Sprinkle with parsley and season lightly with salt and pepper. Serve immediately!</p>
+            </div>
+            <input type="submit" class="goRecipe" value="View Full Recipe" id="steakBites"/>
+        </div>
+    </div>
+
+    <div class="recipe2"  id="beefTenderloin">
+        <div class="beefPotB">
+        <!-- beef mash potato broccoli -->
+            <h2 class="currentRecipe">Beef Tenderloin</h2>
+            <img src="images/beeftenderloin.jpeg" width="450" />
+            <h3 class="ingredients"> Ingredients: </h3>
+            <p>Beef, Potato, Brocolli </p>
+            <div class="full-recipe" id="beeftenderloinRecipe">
+            <h3 > Full Recipe: </h3>
+                <p>1. Adjust rack to top position and preheat oven to 425 degrees. Wash and dry all produce. Dice potatoes into ½-inch pieces (no need to peel). If necessary, cut broccoli florets into 1-inch pieces. </p>
+                <p>2. Place potatoes in a large pot with enough salted water to cover by 2 inches. Bring to a boil and cook until very tender, 15-20 minutes. Reserve ½ cup potato cooking liquid, then drain. Return potatoes to pot and add sour cream, half the chives, and 1 tbsp butter. Mash, adding splashes of reserved cooking liquid as needed, until smooth and creamy; season with salt and pepper, as desired. Cover to keep warm. </p>
+                <p>3. While potatoes cook, toss broccoli on a baking sheet and drizzle with 2 tsp of olive oil, and salt and pepper, as desired. Roast, tossing halfway through, until browned and slightly crispy, 15-20 minutes.</p>
+                <p>4. Meanwhile, pat beef dry with paper towels; season all over with salt and pepper. Heat 1 tsp of vegetable oil in a large pan over medium-high heat. Add beef and cook until a crust begins to form, 4-7 minutes per side. Remove from heat; set beef aside to rest. Wipe out pan. </p>
+                <p>5. Add the vinegar and 1/4 cup water to same pan over medium-high heat. Dissolve beef base in liquid and bring to a simmer. Cook until thickened, 2-3 minutes. Remove from heat and stir in 1 tbsp butter. Season with salt and pepper, as desired. </p>
+                <p>6. Divide beef, broccoli, and potatoes between plates. Drizzle beef with sauce. Garnish potatoes with dried chives, if desired.</p>
+            </div>
+            <input type="submit" class="goRecipe" value="View Full Recipe"  id="beefTenderloin" />
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------------------------------------------------ ------------ --------------------------------------------------------------->
+<!-- Restart or reload page -->
+<!-- <div class="startAgain">
+    <a href="#" class="startAgain"> Try New Recipe</a>
+</div> -->
+
+</section>
+
+
+<!--- NEXT PART -->
+
+
+    <!-- ----------------------------------- CHICKEN PASTA MUSHROOM (A)[1]--------------------------------------------------------- -->
+<!-- <section id="showThis">
+    <div class="recipe-container" id="chickenAlfredo-recipe">
+    <h3 class="recipe-text" > Chicken Alfredo </h3>
+    <h4 id="ingredients">Ingredients: </h4>
+    <p class="recipe-description">
+        Recipe placeholder
+    </p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+<!-- --------------------------------------- CHICKEN PASTA MUSHROOM (B)[2]--------------------------------------------------------- -->
+
+<!-- <div class="recipe-container" id="charlieChan-recipe">
+<h3 class="recipe-text" > Charlie Chan Pasta</h3>
+<h4 id="ingredients"> Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+
+<!-- ---------------------------------------BEEF PASTA MUSHROOM (A)[3]--------------------------------------------------------- -->
+
+<!-- <div class="recipe-container">
+<h3 class="recipe-text"> Spaghetti and Meatballs </h3>
+<h4 id="ingredients">Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+<!-- --------------------------------------- BEEF PASTA MUSHROOM (B)[4]--------------------------------------------------------- -->
+<!-- 
+<div class="recipe-container">
+<h3 class="recipe-text"> Beef Stroganoff </h3>
+<h4 id="ingredients"> Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+<!-- ---------------------------------------CHICKEN PASTA BROCCOLI (A)[5]--------------------------------------------------------- -->
+
+<!-- <div class="recipe-container">
+<h3 class="recipe-text"> Chicken Brocolli Pasta </h3>
+<h4 id="ingredients">Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+<!-- ---------------------------------------CHICKEN PASTA BROCCOLI (B)[6]--------------------------------------------------------- -->
+
+<!-- <div class="recipe-container">
+<h3 class="recipe-text"> Chicken Brocolli Mac & Cheese</h3>
+<h4 id="ingredients"> Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+
+<!-- ---------------------------------------BEEF PASTA BROCCOLI (A)[7]--------------------------------------------------------- -->
+
+<!-- <div class="recipe-container">
+<h3 class="recipe-text">Beef Stir Fry Noodles</h3>
+<h4 id="ingredients">Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+<!-- --------------------------------------- BEEF PASTA BROCCOLI (B)[8]--------------------------------------------------------- -->
+
+<!-- <div class="recipe-container">
+<h3 class="recipe-text"> Beef Broccoli Soup </h3>
+<h4 id="ingredients"> Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+<!-- ---------------------------------------CHICKEN POTATO MUSHROOM(A)[9]--------------------------------------------------------- -->
+
+<!-- <div class="recipe-container">
+<h3 class="recipe-text">Chicken Piccata</h3>
+<h4 id="ingredients">Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+<!-- ---------------------------------------CHICKEN POTATO MUSHROOM(B)[10]------------------------------------------------------- -->
+
+<!-- <div class="recipe-container">
+<h3 class="recipe-text">Creamy Garlic Chicken</h3>
+<h4 id="ingredients"> Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+
+<!-- ---------------------------------------BEEF POTATO MUSHROOM(A)[11]--------------------------------------------------------- -->
+
+<!-- <div class="recipe-container">
+<h3 class="recipe-text">Salisbury Steak</h3>
+<h4 id="ingredients">Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+<!-- --------------------------------------- BEEF POTATO MUSHROOM(B)[12]--------------------------------------------------------- -->
+
+<!-- <div class="recipe-container">
+<h3 class="recipe-text">Beef Caldereta</h3>
+<h4 id="ingredients"> Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+
+<!-- ---------------------------------------CHICKEN POTATO BROCCOLI (A)[13]--------------------------------------------------------- -->
+
+<!-- <div class="recipe-container">
+<h3 class="recipe-text"> Chicken Stir Fry</h3>
+<h4 id="ingredients">Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+<!-- ---------------------------------------CHICKEN POTATO BROCCOLI (B)[14]--------------------------------------------------------- -->
+
+<!-- <div class="recipe-container">
+<h3 class="recipe-text">Roasted Chicken</h3>
+<h4 id="ingredients"> Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+
+<!-- ---------------------------------------\\\\\\\\\\\\\\\\\\\\\\\\\\\\(A)[15]--------------------------------------------------------- -->
+
+<!-- <div class="recipe-container">
+<h3 class="recipe-text">Garlic Butter Steak Bites</h3>
+<h4 id="ingredients">Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2> -->
+
+<!-- --------------------------------------- BEEF POTATO BROCCOLI (B)[16]--------------------------------------------------------- -->
+<!-- 
+<div class="recipe-container">
+<h3 class="recipe-text"> Beef Tenderloin </h3>
+<h4 id="ingredients"> Ingredients: </h4>
+<p class="recipe-description">
+Recipe placeholder
+</p>
+</div>
+
+<h2><a href="index.html" class="backHome"> << Try Another Recipe</a></h2>
+
+</section> -->
+
+<!-- FOOTER -->
+
+<footer id="footer">
+    <div class="copyright"> &copy; Copyright 2022. Beatrice Tan </div>
+</footer>
+
+</body>
+</html>

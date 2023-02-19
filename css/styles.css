@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,200&display=swap');
+
+ html {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, input, p {
+    font-family: 'Work Sans', sans-serif;
+  }
+
+:root{
+    --lightgreen: #C2FBE3;
+    --hoverstyle: #A4F9C8;
+    --darkgreen: #8CAB9E;
+}
+
+#header{
+    background-color: white;
+}
+
+/* MAIN STYLES */
+/* wanna see some real speed? */
+
+#titleRG{
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.form-container{
+    background-color: var(--lightgreen);
+    padding-bottom: 3em;
+}
+
+.formBtn-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.vegContainer, .starchContainer, .meatContainer{
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 15px;
+    margin-right: 1.2em;
+    padding: 0.3em 2em 1.4em 2em;
+}
+
+.formBtn-container{
+    grid-area: button;
+}
+
+#resetBtn, #goBtn{
+    border-radius: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 15px 20px;
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+#goBtn{
+    background-color: #FFA3AF;
+    border: none;
+}
+
+#resetBtn{
+    background-color: #77CBB9;
+    border: none;
+}
+
+label{
+    font-size: 1.8em;
+}
+
+#starch-opt, #meat-opt, #veg-opt {
+    font-size: 2em;
+    text-align: center;
+} 
+
+/* RECIPE STYLES */
+#listRecipes{
+    background-color: var(--darkgreen);
+    text-align: center;
+    padding: 2.2em 0;
+    /* display: none; */
+}
+
+#allRecipes{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.recipe1{
+    flex-basis: 40%;
+    padding: 2em;
+    margin: 2em;
+}
+
+.recipe2{
+    flex-basis: 40%;
+    padding: 2em;
+    margin: 2em;
+}
+ 
+
+ .recipe1, .recipe2{
+    border: 2px solid black;  /* comment these out when tryna see javascript */
+    display: none; 
+    text-align: center; 
+    background-color: rgb(236, 241, 235);
+    gap: 3em;
+ }  
+
+ img{
+    margin-bottom: 2em;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+ /* button styles */
+ .goRecipe{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    /* border: 2px solid black; */
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #FFA3AF;
+    border:#f35268 3px solid;
+}
+
+.goRecipe:hover, #goBtn:hover{
+    background-color: #f35268;
+}
+
+.goRecipe:active, #goBtn:active{
+    background-color: #f42d47;
+}
+
+a.startAgain{
+    display: none;
+    text-decoration: none;
+    color: var(--darkgreen);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #C2FBE3;
+}
+  
+#resetBtn:hover{
+    background-color: #57af8d;
+}
+
+#resetBtn:active{
+    background-color: #28a072;
+}
+
+/* classes disappear and appear */
+
+.chickPM, .beefPM, .chickPB, .beefPB, .chickPotM, .beefPotM, .chickPotB, .beefPotB{ 
+    
+}
+
+
+    /* display: none; */
+    /* border: 2px solid black; */
+    #titleRG{
+        font-size: 3em;
+        text-align: center;
+    }
+
+
+/*      HIDDEN BUT NOT ANYMOREEE    */
+
+    .recipe-container{
+        padding: 2em 8em;
+        background-color: rgb(236, 241, 235);
+    }
+    .recipe-text{
+        background-color: yellow;
+        border: 2px black solid;
+        padding: 10px 30px;
+    }
+    
+    a.backHome{
+        color: white;
+        text-decoration: none;
+        padding: 15px 20px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        background-color: #FFA3AF;
+    }
+    
+    
+    .full-recipe{
+        display: none;
+    }
